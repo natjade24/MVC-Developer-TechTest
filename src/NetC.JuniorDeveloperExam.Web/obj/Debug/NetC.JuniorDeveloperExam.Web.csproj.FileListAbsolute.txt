@@ -1,6 +1,3 @@
-C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.dll.config
-C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.dll
-C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.pdb
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\roslyn\csc.exe
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\roslyn\csc.exe.config
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\roslyn\csc.rsp
@@ -70,5 +67,8 @@ C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\Micr
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.csprojAssemblyReference.cache
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.csproj.CoreCompileInputs.cache
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.csproj.CopyComplete
-C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.dll
-C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.pdb
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.Web.dll.config
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.Web.dll
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.Web.pdb
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.dll
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.pdb
