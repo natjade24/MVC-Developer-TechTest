@@ -120,10 +120,12 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\Json.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IJson.cs" />
     <Compile Include="Models\BlogComments.cs" />
     <Compile Include="Models\BlogPosts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
