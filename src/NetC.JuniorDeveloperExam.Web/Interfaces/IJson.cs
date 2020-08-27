@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using NetC.JuniorDeveloperExam.Web.Models;
 
 namespace NetC.JuniorDeveloperExam.Web.Interfaces
 {
     public interface IJson
     {
+        List<BlogPosts> GetJsonData();
     }
 }

@@ -1,21 +1,20 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using NetC.JuniorDeveloperExam.Web.Classes;
 using NetC.JuniorDeveloperExam.Web.Interfaces;
+using NetC.JuniorDeveloperExam.Web.Models;
 
 namespace NetC.JuniorDeveloperExam.Web.Controllers
 {
     public class BlogController : Controller
     {
-        private readonly IJson json;
-
-        public BlogController(IJson json)
-        {
-            this.json = json;
-        }
-
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            RootObject rootObject = new RootObject();
+            IJson json = new Json(rootObject);
+            List<BlogPosts> blogPosts = json.GetJsonData();
+            return View(blogPosts);
         }
     }
 }
