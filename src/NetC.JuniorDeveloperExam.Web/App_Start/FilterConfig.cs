@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace NetC.JuniorDeveloperExam
+namespace NetC.JuniorDeveloperExam.Web
 {
     public class FilterConfig
     {

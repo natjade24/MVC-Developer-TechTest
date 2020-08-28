@@ -1,4 +1,5 @@
 ﻿@using NetC.JuniorDeveloperExam.Web.Models
+@using System.Web.Optimization
 @model List<NetC.JuniorDeveloperExam.Web.Models.BlogPosts>
 
 @{
@@ -24,25 +25,40 @@
                     <div class="card-body">
                         @using (Html.BeginForm())
                         {
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="Name">Name</label>
-                                        <input type="email" class="form-control" id="Name"     placeholder="Name"/>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="EmailAddress">Email Address</label>
-                                        <input type="password" class="form-control" id="EmailAddress" placeholder="Email Address"/>
-                                    </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="Name">Name</label>
+                                    <input type="email" class="form-control" id="Name"     placeholder="Name"/>
                                 </div>
-                                <div class="form-group">
-                                    <label for="Message">Message</label>
-                                    <textarea id="Message" class="form-control" rows="3"></textarea>
+                                <div class="form-group col-md-6">
+                                    <label for="EmailAddress">Email Address</label>
+                                    <input type="password" class="form-control" id="EmailAddress" placeholder="Email Address"/>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            }
+                            </div>
+                            <div class="form-group">
+                                <label for="Message">Message</label>
+                                <textarea id="Message" class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        }
                     </div>
                 </div>
+                @foreach (var blogComments in items.BlogComments)
+                {
+                    <div class="media mb-4">
+                        <img class="d-flex mr-3 rounded-circle user-avatar" src="https://eu.ui-avatars.com/api/?name=@blogComments.Name" alt="@blogComments.Name">
+                        <div class="media-body">
+                            <h5 class="mt-0">@blogComments.Name<small><em>(@blogComments.DateTime)</em></small></h5>
+                            @blogComments.
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
 }
+@Scripts.Render("~/Scripts/unobtrusive-bootstrap.js")
+@Scripts.Render("~/Scripts/bootstrap.bundle.min.js")
+@Scripts.Render("~/Scripts/jquery-3.3.1.min.js")
+@Scripts.Render("~/Scripts/jquery.validate.min.js")
+@Scripts.Render("~/Scripts/jquery.validate.unobtrusive.min.js")

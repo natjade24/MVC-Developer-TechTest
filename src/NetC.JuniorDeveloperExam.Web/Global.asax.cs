@@ -1,5 +1,7 @@
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
+using NetC.JuniorDeveloperExam.Web;
 
 namespace NetC.JuniorDeveloperExam
 {
@@ -10,6 +12,7 @@ namespace NetC.JuniorDeveloperExam
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundlesConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

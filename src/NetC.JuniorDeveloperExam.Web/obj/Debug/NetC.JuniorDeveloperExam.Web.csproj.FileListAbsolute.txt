@@ -72,3 +72,8 @@ C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\NetC.JuniorDeveloperExam.Web.pdb
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.dll
 C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\obj\Debug\NetC.JuniorDeveloperExam.Web.pdb
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\Antlr3.Runtime.dll
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\System.Web.Optimization.dll
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\WebGrease.dll
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\Antlr3.Runtime.pdb
+C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\bin\System.Web.Optimization.xml
