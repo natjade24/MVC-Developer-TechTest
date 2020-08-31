@@ -23,13 +23,13 @@ namespace NetC.JuniorDeveloperExam.Web.Classes
 
             string blogPosts =
                 File.ReadAllText(
-                    @"C:\source\repos\mvc-developer-assessment\src\NetC.JuniorDeveloperExam.Web\App_Data\Blog-Posts.json");
+                    @"C:\source\repos\MVC-Developer-TechTest\src\NetC.JuniorDeveloperExam.Web\App_Data\Blog-Posts.json");
 
             RootObject deserializeObject = JsonConvert.DeserializeObject<RootObject>(blogPosts);
 
-            List<BlogPosts> blog = deserializeObject.BlogPosts.Where(x => x.Id == id).ToList();
+            rootObjects = deserializeObject.BlogPosts.Where(x => x.Id == id).ToList();
 
-            return blog;
+            return rootObjects;
         }
     }
 }
