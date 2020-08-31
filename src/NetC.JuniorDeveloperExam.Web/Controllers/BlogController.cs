@@ -16,15 +16,5 @@ namespace NetC.JuniorDeveloperExam.Web.Controllers
             List<BlogPosts> blogPosts = json.GetJsonData();
             return View(blogPosts);
         }
-
-        [HttpPost]
-        public ActionResult Index(BlogComments blogComments)
-        {
-            if (ModelState.IsValid)
-            {
-
-            }
-            return RedirectToAction("Index");
-        }
     }
 }
