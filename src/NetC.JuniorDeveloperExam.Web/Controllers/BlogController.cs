@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using NetC.JuniorDeveloperExam.Web.Classes;
 using NetC.JuniorDeveloperExam.Web.Interfaces;
@@ -22,6 +23,10 @@ namespace NetC.JuniorDeveloperExam.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                RootObject rootObject = new RootObject();
+                IJson json = new Json(rootObject);
+                blogComments.DateTime = DateTime.UtcNow;
+                json.SaveJsonData(blogComments);
             }
 
             return RedirectToAction("Index");

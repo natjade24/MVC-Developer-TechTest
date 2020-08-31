@@ -6,5 +6,6 @@ namespace NetC.JuniorDeveloperExam.Web.Interfaces
     public interface IJson
     {
         List<BlogPosts> GetJsonData();
+        void SaveJsonData(BlogComments blogComments);
     }
 }
