@@ -3,7 +3,7 @@ using NetC.JuniorDeveloperExam.Web.Models;
 
 namespace NetC.JuniorDeveloperExam.Web.Interfaces
 {
-    public interface IJson
+    public interface IJsonDataReader
     {
         List<BlogPosts> GetJsonData();
         void SaveJsonData(BlogComments blogComments);

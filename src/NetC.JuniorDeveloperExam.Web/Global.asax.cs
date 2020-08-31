@@ -12,7 +12,6 @@ namespace NetC.JuniorDeveloperExam
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundlesConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

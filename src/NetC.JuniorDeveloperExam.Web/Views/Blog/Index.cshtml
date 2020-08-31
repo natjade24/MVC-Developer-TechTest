@@ -15,7 +15,7 @@
             <div class="col-lg-12">
                 <h1 class="mt-4">@items.Title</h1>
                 <hr>
-                <p>@items.DateTime</p>
+                <p>@items.DateTime.ToLongDateString() @items.DateTime.ToLongTimeString()</p>
                 <hr>
                 <img class="img-fluid rounded" src="@items.Image" alt="@items.Title"/>
                 <hr>
@@ -53,7 +53,7 @@
                     <div class="media mb-4">
                         <img class="d-flex mr-3 rounded-circle user-avatar" src="https://eu.ui-avatars.com/api/?name=@blogComments.Name" alt="@blogComments.Name">
                         <div class="media-body">
-                            <h5 class="mt-0">@blogComments.Name<small><em>(@blogComments.DateTime)</em></small></h5>
+                            <h5 class="mt-0">@blogComments.Name<small><em>(@blogComments.DateTime.ToLongDateString() @blogComments.DateTime.ToLongTimeString())</em></small></h5>
                             @blogComments.Message
                         </div>
                     </div>

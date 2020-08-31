@@ -13,8 +13,14 @@ namespace NetC.JuniorDeveloperExam.Web.Controllers
         public ActionResult Index()
         {
             RootObject rootObject = new RootObject();
-            IJson json = new Json(rootObject);
-            List<BlogPosts> blogPosts = json.GetJsonData();
+            IJsonDataReader json = new JsonDataReader(rootObject);
+            List<BlogPosts> blogPosts = new List<BlogPosts>();
+
+            if (ModelState.IsValid)
+            {
+                blogPosts = json.GetJsonData();
+            }
+
             return View(blogPosts);
         }
 
@@ -24,7 +30,7 @@ namespace NetC.JuniorDeveloperExam.Web.Controllers
             if (ModelState.IsValid)
             {
                 RootObject rootObject = new RootObject();
-                IJson json = new Json(rootObject);
+                IJsonDataReader json = new JsonDataReader(rootObject);
                 blogComments.DateTime = DateTime.UtcNow;
                 json.SaveJsonData(blogComments);
             }
